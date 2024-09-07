@@ -1,0 +1,42 @@
+
+Chess is a two-player strategy game played on an 8x8 grid called a chessboard. Each player begins with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. The objective of the game is to checkmate the opponent's king, meaning the king is in a position to be captured ("in check") and there is no legal move to escape the threat of capture.
+
+1. **The Chessboard and Pieces:**
+   - The chessboard consists of 64 squares, alternating in color (light and dark).
+   - Each player controls 16 pieces:
+     - **King**: The most important piece. The game is lost if the king is checkmated.
+     - **Queen**: The most powerful piece, can move any number of squares in any direction.
+     - **Rooks**: Move horizontally or vertically any number of squares.
+     - **Bishops**: Move diagonally any number of squares.
+     - **Knights**: Move in an "L" shape: two squares in one direction and then one square perpendicular, or vice versa.
+     - **Pawns**: Move forward one square, with the option to move two squares on their first move. Pawns capture diagonally and have the ability to promote to another piece if they reach the opponent's back rank.
+
+2. **Basic Rules of Movement:**
+   - **King**: Moves one square in any direction.
+   - **Queen**: Moves any number of squares along a row, column, or diagonal.
+   - **Rook**: Moves any number of squares along a row or column.
+   - **Bishop**: Moves any number of squares diagonally.
+   - **Knight**: Moves in an "L" shape and is the only piece that can "jump" over other pieces.
+   - **Pawn**: Moves forward one square, with an optional two-square move from its starting position. Pawns capture diagonally.
+
+3. **Special Moves:**
+   - **Castling**: A move involving the king and either rook that moves the king two squares towards a rook and the rook to the square over which the king crossed. Conditions include:
+     - Neither the king nor the rook has previously moved.
+     - There are no pieces between the king and the rook.
+     - The king is not currently in check, does not move through a square that is attacked, and does not end up in check.
+   - **En Passant**: A special pawn capture that can occur when a pawn moves two squares forward from its starting position and lands beside an opponent’s pawn. The opponent’s pawn can capture the first pawn as if it had only moved one square.
+   - **Pawn Promotion**: When a pawn reaches the opponent's back rank, it can be promoted to any piece (except a king), typically a queen.
+
+4. **Check and Checkmate:**
+   - **Check**: A king is in check if it is under immediate threat of capture. The player must make a move that removes the check.
+   - **Checkmate**: A king is in checkmate if it is in check and there is no legal move to escape the threat of capture, resulting in a loss.
+
+5. **Draws and Stalemate:**
+   - **Stalemate**: The game ends in a draw if a player has no legal moves and their king is not in check.
+   - **Insufficient Material**: A draw occurs if neither player has enough material to force checkmate (e.g., king vs. king, king and bishop vs. king, etc.).
+   - **Threefold Repetition**: A player can claim a draw if the same position occurs three times with the same player to move.
+   - **Fifty-Move Rule**: A draw can be claimed if fifty consecutive moves have been made by both players without a pawn move or capture.
+
+6. **Winning the Game:**
+   - The game is won by checkmating the opponent’s king.
+   - A player can also win if the opponent resigns.

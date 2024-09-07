@@ -1,0 +1,49 @@
+spring:
+  cloud:
+    function:
+      definition: fileSupplier | documentReader | splitter | titleDeterminer | vectorStoreConsumer
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  config:
+    import: 'optional:classpath:secrets.yaml'
+  application:
+    name: gemini
+  datasource:
+    url: ${secrets.database.database-url}
+    username: ${secrets.database.database-username}
+    password: ${secrets.database.database-password}
+  ai:
+    vectorstore:
+      pgvector:
+        index-type: HNSW
+        distance-type: COSINE_DISTANCE
+        dimensions: 712
+    vertex:
+      ai:
+        embedding:
+          project-id: ${secrets.mebedding.google-cloud-project-id}
+          location: ${secrets.mebedding.google-cloud-location}
+          text:
+            options:
+              model: ${secrets.mebedding.embedding-model}
+              dimensions: 712
+        gemini:
+          project-id: ${secrets.mebedding.google-cloud-project-id}
+          location: ${secrets.mebedding.google-cloud-location}
+          chat:
+            options:
+              model: ${secrets.chatmodel.model}
+logging:
+  level:
+    org:
+      springframework:
+        ai:
+          chat:
+            client:
+              advisor: DEBUG
+app:
+  resource: https://en.wikipedia.org/wiki/Chess
